@@ -60,7 +60,7 @@
                         <div class="invalid-feedback">Este campo es obligatorio </div>
                     </div>
                     
-                    <div class="col-md-6">
+                    <div class="col-md-5">
                         <label for="mail" class="form-label">Mail</label>
                         <div class="input-group has-validation">
                             <input type="email" class="form-control" id="mail" required>
@@ -68,28 +68,44 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-5">
                         <label for="contraseña" class="form-label">Contraseña</label>
-                        <div class="input-group has-validation">
-                            <span class="input-group-text" id="onputGroupPrepend3"></span>
+                        <div class="input-group has-validation">  
                         <input type="password" class="form-control" id="contraseña"  required>
                         <div class="invalid-feedback">Este campo es obligatorio</div>
                         </div>
                     </div>
 
                     <div class="col-md-3">
-                        <label for="validationServer04" class="form-label">State</label>
-                        <select class="form-select is-invalid" id="validationServer04" ariadescribedby="validationServer04Feedback" required>
-                            <option selected disabled value="">Choose...</option>
-                            <option>...</option>
+                        <label for="region" class="form-label">Region</label>
+                        <select class="form-select" id="region" required>
+                            <option selected disabled value="">Seleccione....</option>
+                            <option>RM</option>
+                            <option>I</option>
+                            <option>II</option>
+                            <option>III</option>
+                            <option>IV</option>
+                            <option>V</option>
+                            <option>VI</option>
+                            <option>VII</option>
+                            <option>VIII</option>
+                            <option>IX</option>
+                            <option>X</option>
+                            <option>XI</option>
                         </select>
-                        <div id="validationServer04Feedback" class="invalid-feedback">Please select a valid state.</div>
+                        <div class="invalid-feedback">Este campo es obligatorio</div>
                     </div>
 
                     <div class="col-md-3">
-                        <label for="validationServer05" class="form-label">Zip</label>
-                        <input type="text" class="form-control is-invalid" id="validationServer05" ariadescribedby="validationServer05Feedback" required>
-                        <div id="validationServer05Feedback" class="invalid-feedback">Please provide a valid zip.</div>
+                        <label for="comuna" class="form-label">Comuna</label>
+                        <input type="text" class="form-control" id="comuna" required>
+                        <div class="invalid-feedback">Este campo es obligatorio</div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="direccion" class="form-label">Direccion</label>
+                        <input type="text" class="form-control" id="direccion" required>
+                        <div class="invalid-feedback">Este campo es obligatorio</div>
                     </div>
 
                     <div class="col-12">
@@ -101,7 +117,7 @@
                     </div>
 
                     <div class="col-12">
-                        <button class="btn btn-primary" type="submit">Submit form</button>
+                        <button class="btn btn-primary" type="submit">Proceder</button>
                     </div>
                 </form>
             </div>
