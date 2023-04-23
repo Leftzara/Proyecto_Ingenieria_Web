@@ -12,8 +12,14 @@ button{
     margin: 10px 10px 0 0;
 }
 
-
 /*Fin estilos formulario registro*/
+
+nav {
+  width: 200px;
+  height:100px;
+  background: #fff;
+  display:none;
+}
 
 /* Estilo main*/
 .mainCover {
@@ -28,6 +34,7 @@ button{
     background-color:cyan;
     text-align: right;
   }
+
 
   .container{
     height:400px;
