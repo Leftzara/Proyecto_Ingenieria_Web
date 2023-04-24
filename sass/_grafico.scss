@@ -1,0 +1,15 @@
+@use 'mixinsfunc';
+
+
+.vGrafico{
+
+    width: 90%;
+    height: 80%;
+    @include mixinsfunc.crear-flexbox(center);
+
+}
+.grafico{
+
+    @include mixinsfunc.crear-flexbox(space-evenly);
+
+}

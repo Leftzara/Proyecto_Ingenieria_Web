@@ -1,0 +1,12 @@
+.calendario{
+
+    height: 80%;
+
+    margin: 10px;
+    @include mixinsfunc.crear-flexbox(center);
+}
+.cuadroCalendario{
+
+
+    margin-bottom: auto;
+}

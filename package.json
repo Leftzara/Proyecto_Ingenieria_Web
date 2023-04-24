@@ -1,0 +1,15 @@
+{
+  "name": "proyecto_ingenieria_web",
+  "version": "1.0.0",
+  "description": "El objetivo del proyecto es crear una aplicacion web la cual sirva, tanto para gente mayor como para el resto mantenerse al dia con sus remedios, proporcionar mayor informacion de los mismos y servir como una herramienta para el recordatorio de horarios.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.62.0"
+  }
+}

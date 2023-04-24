@@ -1,0 +1,13 @@
+@use 'mixinsfunc';
+
+.busquedaRemedios{
+    height: 90%;
+    width: 90%;
+
+    @include mixinsfunc.crear-flexbox(center);
+}
+.barraBusqueda{
+
+    @include mixinsfunc.crear-flexbox(end);
+
+}
