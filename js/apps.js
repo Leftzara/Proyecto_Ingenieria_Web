@@ -31,6 +31,47 @@ document.addEventListener("DOMContentLoaded",function(){
 });
 
 
+
+const forms = document.querySelectorAll('.needsvalidation');
+let password = document.getElementById("contrasenya");
+
+const campos= document.getElementById("campos");
+
+
+(()=>{
+    "use strict"
+    const forms = document.querySelectorAll(".needs-validation")
+    Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+    if (!form.checkValidity()) {if(!checkPattern() && password.value!==""){
+        campos.children[3].getElementsByClassName("invalidfeedback")[0].innerHTML = "Contraseña no valida";
+        } if(!checkPattern() && password.value!==""){
+            campos.children[3].getElementsByClassName("invalidfeedback")[0].innerHTML = "Contraseña no valida";
+            }
+            event.preventDefault()
+            event.stopPropagation()
+            }
+            form.classList.add('was-validated')
+            }, false)
+            })   
+        })()
+    
+     
+
+
+    function checkPattern(){
+        var elem = document.getElementById("contrasenya");
+        var pattern = elem.getAttribute("^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$");
+        var re = new RegExp(pattern);
+        if (re.test(elem.value)) {
+        return true;
+        } else {
+        return false;
+        }
+        }
+
+   
+
 document.addEventListener("DOMContentLoaded",function(){
     document.getElementById("formulario").addEventListener("submit",function(evento){
         let email=document.getElementById("email").value;

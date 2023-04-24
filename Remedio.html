@@ -15,7 +15,11 @@
             integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
             crossorigin="anonymous">
     </head>
-    <header>
+    
+
+    <body>
+
+      <header>
         <div
       class="mainCover d-flex justify-content-center d-flex align-items-center flex-column"
     >
@@ -26,8 +30,17 @@
       <p>Porque la salud es importante para ti y toda la familia</p>
     </div>
     </header>
+    <div> <img id="menu" src="https://www.iconbolt.com/preview/facebook/heroicons-solid/bars-3.svg" ></div>
+    <nav id="sidenav">
+      <ul>
+          <li><a href="registro.html"> Registrarse </a> </li>
+          <li><a href="listaremedios.html"> Remedios</a> </li>
+          <li><a href="Grafico.html"> Grafico</a> </li>
+          <li><a href="calendario.html">Calendario</a></li>
+          <li><a href="preguntas.html"> Preguntas frecuentes</a> </li>
+      </ul>
+    </nav>
 
-    <body>
         <div class="bodyremedio">
         <h1>Cordiceps</h1>
         <img src="images/Cordyceps.jpg" style="height: 300px";
@@ -40,17 +53,35 @@
             Este sector tendra informacion sobre los remedios, sus dosis, al igual que imagenes de como administrarlos.
         </p>
     </div>
-    </body>
 
     <footer>
-        <div class="informacionGeneral">
-            <p class="informacion">
-              contacto: medicinas.andinas@gmail.com
-              <br>
-              Tel:+56969420333
-              <br>
-              Direccion:Calle franklin 1632, Mendosa, Peru.
-            </p>
-          </div>
-    </footer>
+      <div class="informacionGeneral">
+          <p class="informacion">
+            contacto: medicinas.andinas@gmail.com
+            <br>
+            Tel:+56969420333
+            <br>
+            Direccion:Calle franklin 1632, Mendosa, Peru.
+          </p>
+        </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(document).ready(function(){
+        $("#menu").click(function(){
+          $("#sidenav").toggle();
+        });
+    
+    $("#menu").width(70);
+    $("#menu").height(50);
+        
+
+    });
+  </script>
+
+    </body>
+
+    
 </html>
